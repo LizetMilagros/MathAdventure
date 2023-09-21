@@ -19,6 +19,7 @@ public class MainPanel : MonoBehaviour
     public GameObject mainPanel;
     public GameObject optionsPanel;
     public GameObject levelsPanel;
+    public GameObject juegosPanel;
 
     private void Awake(){
         volumenFX.onValueChanged.AddListener(ChangeVolumeFX);
@@ -38,6 +39,7 @@ public class MainPanel : MonoBehaviour
         mainPanel.SetActive(false);
         optionsPanel.SetActive(false);
         levelsPanel.SetActive(false);
+        juegosPanel.SetActive(false);
 
         panel.SetActive(true);
         PlaySoundButton();
